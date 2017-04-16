@@ -50,6 +50,7 @@ public class Section extends Entity {
 
     private Integer position;
     private List<Branch> branches = new ArrayList<Branch>();
+    private String use_yn;
 
     /**
      * Default constructor, protected for using only by Hibernate and subclasses
@@ -182,5 +183,11 @@ public class Section extends Entity {
         return "PoulpeSection [id=" + getId() + ", name=" + name + ", description=" + description + "]";
     }
 
+	public String getUse_yn() {
+		return use_yn;
+	}
 
+	public void setUse_yn(String use_yn) {
+		this.use_yn = use_yn;
+	}
 }
